@@ -1,0 +1,50 @@
+// This is a working Java class.
+int NetBeats IDE 
+// After you run it without errors, modify according to the comment instruction.
+
+public class Car {
+   // Attributes - Add one new attribute after "private int door"
+   private String color;
+   private int door;
+
+   // Constructor - Modify it to initalize the new attribute as well
+   public Car (String clr, int dr) {
+      color = clr;
+      door = dr;
+   }
+   
+   // Setters - Add a Setter to set value for the new attribute
+   public void setColor( String clr ) {
+      color = clr;
+   }
+
+   public void setDoor( int dr ) {
+      door = dr;
+   }
+   
+   // Getters - Add a Getter to get value from the new attribute
+   public String getColor( ) {
+      return color;
+   }
+
+   public int getDoor( ) {
+      return door;
+   }
+      
+   
+   // main method to test the Car class
+   public static void main(String []args) {
+      // Object creation - Modify it to include the new attribute
+      Car myCar = new Car( "Red", 4);
+      
+      // Print out car color using getter - Modify to print out the new attribute value
+      System.out.println("My car was: " + myCar.getColor() );
+
+      // Change value using the setter - Modify to change the new attribute value
+      myCar.setColor( "Black" );
+
+      // Print out car color using getter - Modify to print out the new attribute value
+      System.out.println("Now my car is: " + myCar.getColor() ); 
+
+   }
+}
